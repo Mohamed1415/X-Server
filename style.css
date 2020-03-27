@@ -3,3 +3,46 @@ h1
 	color : red;
 	text-align : center;
 }
+p
+{
+	color : red;
+}
+div
+{
+	background-color : teal;
+	width : 120px
+	height : 120px
+	margin:30px;
+	padding : 20px;
+	font-family : Arial, sans-serif;
+	font-size:28px;
+	border : 2px solid white ;
+}
+table
+{
+	border : 2px solid blue;
+	border-collapse : collapse ;
+}
+th , td
+{
+	border : 2px solid black;
+	padding : 5px ;
+	width : 50% ;
+	text-align : center ;
+}
+th
+{
+	background-color : yellow ;
+}
+#Top
+{
+	font-size : 38px;
+	background-color : yellow ;
+	border : 2px solid black;
+}
+.bold
+{
+	font-weight : bold;
+	color : red ;
+}
+
