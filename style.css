@@ -7,16 +7,28 @@ p
 {
 	color : red;
 }
+p::selection
+{
+	color:white;
+	background-color:red;
+}
 div
 {
 	background-color : teal;
-	width : 120px
-	height : 120px
-	margin:30px;
+	width : 100% ;
+	height : 300px ;
 	padding : 20px;
 	font-family : Arial, sans-serif;
 	font-size:28px;
-	border : 2px solid white ;
+	border : 2px solid black ;
+	border-collapse : collapse ;
+	margin-top : 15px ;
+	margin-bottom : 15px ;
+	margin-right : 15px ;
+	margin-left : 15px ;
+	text-align : center ;
+	vertical-align : middle ;
+
 }
 table
 {
@@ -34,15 +46,65 @@ th
 {
 	background-color : yellow ;
 }
+
 #Top
 {
 	font-size : 38px;
 	background-color : yellow ;
 	border : 2px solid black;
+	margin-top : 15px ;
+	margin-bottom : 15px ;
+	margin-right : 15px ;
+	margin-left : 15px ;
 }
 .bold
 {
 	font-weight : bold;
 	color : red ;
 }
+ol >li
+{
+	color : blue ;
+}
+ul>li::before , ul>li::after
+{
+	content:"\263c ";
+	color :red;
+}
 
+input[type=text]
+{
+	background-color : lime ;
+	font-weight : bold;
+}
+button
+{
+	background-color : yellow ;
+	width : 10% ;
+}
+
+button:hover
+{
+	color : white ;
+	background-color : green ;
+}
+
+@media print
+{
+	.test
+	{
+		display: none;
+	}
+}
+
+@media (min-width:500px){
+	.www::before{
+		content:"test page width";
+	}
+}
+
+@media (max-width:499%){
+	.www::before{
+		content:"width...";
+	}
+}
