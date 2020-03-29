@@ -4,6 +4,7 @@
 		<title> My testing webpage</title>
 		<meta name = "viewport" content = "width=device-width", initial-scale=1.0>
 		<link rel= "stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	</head>
 	
 	<body>
@@ -44,7 +45,7 @@
 		
 		<br>Designing Table</br>
 		<p>
-		<table>
+		<table class "table">
 			<tr>
 				<th>S.R</th>
 				<th>First Name</th>
@@ -62,14 +63,17 @@
 		
 		<br>Creating Form</br>
 		<p>
-		<form>
+		<form class="form-group">
 			<input type="text" placeholder="Full Name" name= "name">
-			<p>
+
 			<input type="number" placeholder="Your Age" name= "age">
 			<p>
+			<input type = "range" class = "form-control-range" id="FormControlRange">
 			<button>
 				<a href= "https://www.youtube.com/">Submit</a>
 			</button>
+			<p>
+			<button type="button" class="btn btn-outline-primary">Submite</button>
 		</form>
 		
 		<p>
@@ -91,6 +95,14 @@
 			<div>this is a div B</div>
 			<div>this is a div C</div>
 			<div>this is a div D</div>
+		</div>
+		<div class = "grid">
+			<div class="grid_item">1</div>
+			<div class="grid_item">2</div>
+			<div class="grid_item">3</div>
+			<div class="grid_item">4</div>
+			<div class="grid_item">5</div>
+			<div class="grid_item">6</div>
 		</div>
 	</body>
 
